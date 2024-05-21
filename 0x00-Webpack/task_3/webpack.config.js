@@ -5,9 +5,9 @@ const path = require('path');
 module.exports = {
 	mode: 'development',
 	entry: {
-		header: path.resolve(__dirname, './js/header.js'),
-		body: path.resolve(__dirname, './js/body.js'),
-		footer: path.resolve(__dirname, './js/footer.js'),
+		header: path.resolve(__dirname, './modules/header/header.js'),
+		body: path.resolve(__dirname, './modules/body/body.js'),
+		footer: path.resolve(__dirname, './modules/footer/footer.js'),
 	},
 	output: {
 		path: path.resolve(__dirname, 'public'),
