@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-
+import React from 'react';
 import Notifications from './Notifications';
 
 describe('Notifications component', () => {
