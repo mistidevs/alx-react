@@ -40,7 +40,7 @@ const Notifications = () => {
       <ul>
         <NotificationItem type="default" value="New course available" />
         <NotificationItem type="urgent" value="New resume available" />
-        <NotificationItem type="default" html={getLatestNotification()} />
+        <NotificationItem type="urgent" html={getLatestNotification()} />
       </ul>
     </div>
   );

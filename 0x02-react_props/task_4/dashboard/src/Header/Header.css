@@ -1,0 +1,30 @@
+.App-header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.App-logo {
+  pointer-events: none;
+	width: 250px;
+	height: 250px;
+}
+
+.App-title {
+  color: red;
+  margin-left: 20px;
+  font-size: calc(10px + 2vmin);
+  vertical-align: middle;
+}
+
+.App-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: red;
+}
