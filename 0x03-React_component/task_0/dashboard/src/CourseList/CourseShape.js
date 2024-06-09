@@ -1,4 +1,4 @@
-import { shape } from 'prop-types';
+import { shape } from "prop-types";
 import PropTypes from 'prop-types';
 
 const userShape = shape({

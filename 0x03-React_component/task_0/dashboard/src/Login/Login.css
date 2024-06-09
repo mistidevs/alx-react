@@ -1,0 +1,21 @@
+.App-body {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+}
+
+.App-body::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.App-Form {
+  display: flex;
+  flex-direction: row;
+}
+
+.App-Form label, .App-Form input, .App-Form button {
+  margin-right: 10px;
+}

@@ -1,0 +1,33 @@
+.App-table {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.App-table::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Style the table */
+table#CourseList {
+  border-collapse: collapse;
+  width: 800px;/* Collapse borders for adjacent cells */
+  min-width: 400px;
+
+}
+
+/* Style the table headers */
+table#CourseList th {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Style the table cells */
+table#CourseList td {
+  padding: 5px; /* Add padding to table cells */
+  border: 1px solid #ddd; /* Add a thin border to cells */
+}
