@@ -5,4 +5,4 @@ function getImmutableObject(object) {
   return fromJS(object);
 }
 
-export default getImmutableObject;
+module.exports = getImmutableObject;
