@@ -23,7 +23,7 @@ const Login = () => {
           <br />
           <button>OK</button>
         </div>
-      </div>
+    </div>
   </React.Fragment>
   );
 }
