@@ -23,11 +23,14 @@ module.exports = {
 				type: 'asset/resource',
 				use: [
 					{
-						loader: ['file-loader', 'image-webpack-loader'],
+						loader: 'file-loader',
 						options: {
 							bypassOnDebug: true,
 							disable: true,
 						},
+					},
+					{
+						loader: 'image-webpack-loader',
 					},
 				],
 			},
