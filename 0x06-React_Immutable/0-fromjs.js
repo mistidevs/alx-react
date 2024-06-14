@@ -1,8 +1,6 @@
 // Using fromJS to create a map with 'immutable'
-const { fromJS } = require('immutable');
+import { fromJS } from './node_modules/immutable/dist/immutable';
 
-function getImmutableObject (object) {
+export function getImmutableObject (object) {
   return fromJS(object);
 }
-
-module.exports = getImmutableObject;
