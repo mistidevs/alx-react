@@ -1,6 +1,12 @@
 // Concatenating multiple elements
-import { List, Map } from 'immutable';
+import { List } from 'immutable';
 
-export const concatElements = (page1, page2) => List(page1).concat(List(page2));
+export function concatElements (page1, page2) {
+  const concatenatedArray = [...page1, ...page2];
+  return List(concatenatedArray);
+}
 
-export const mergeElements = (page1, page2) => Map(page1).concat(Map(page2));
+export function mergeElements (page1, page2) {
+  const merged = { ...page1, ...page2 };
+  return List(Object.values(merged));
+}
