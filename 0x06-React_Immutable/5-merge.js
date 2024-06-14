@@ -1,13 +1,6 @@
 // Concatenating multiple elements
-const { List } = require('immutable');
+import { List, Map } from 'immutable';
 
-function concatElements(page1, page2) {
-  return List([...page1, ...page2]);
-}
+export const concatElements = (page1, page2) => List(page1).concat(List(page2));
 
-function mergeElements(page1, page2) {
-  const merged = { ...page1, ...page2 };
-  return List(Object.values(merged));
-}
-
-module.exports = { concatElements, mergeElements }
+export const mergeElements = (page1, page2) => Map(page1).concat(Map(page2));
