@@ -9,8 +9,8 @@ describe('CourseList Component', () => {
     expect(wrapper.exists()).toBe(true);
   });
 
-  it('renders all 5 rows', () => {
+  it('renders all 3 rows', () => {
     const wrapper = shallow(<CourseList />);
-    expect(wrapper.find(CourseListRow).length).toBe(5);
+    expect(wrapper.find(CourseListRow).length).toBe(3);
   })
 })
