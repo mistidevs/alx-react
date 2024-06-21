@@ -1,7 +1,7 @@
 import { getAllNotificationsByUser } from './notifications';
 
-describe('getNotificationsById', () => {
-  test('returns the correct notifications for id 5debd764a7c57c7839d722e9', () => {
+describe('getNotificationsByUser', () => {
+  it('returns the correct notifications for id 5debd764a7c57c7839d722e9', () => {
     const expectedData = [
       {
         guid: "2d8e40be-1c78-4de0-afc9-fcc147afd4d2",
