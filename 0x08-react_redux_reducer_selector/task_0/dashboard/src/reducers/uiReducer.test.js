@@ -1,3 +1,4 @@
+import { toJS } from 'immutable';
 import { SELECT_COURSE } from "../actions/courseActionTypes";
 import { DISPLAY_NOTIFICATION_DRAWER } from "../actions/uiActionTypes";
 import { initialState } from "./uiReducer";
@@ -16,8 +17,8 @@ describe("checking the states of the reducer", () => {
   });
   it("isNotificationDrawerVisible is true when DISPLAY_NOTIFICATION_DRAWER is the action", () => {
     const action = { type: DISPLAY_NOTIFICATION_DRAWER }
-    const state = uiReducer(undefined, action);
+    const state = uiReducer(undefined, action).toJS();
 
     expect(state.isNotificationDrawerVisible).toEqual(true);
-  })
+  });
 });
