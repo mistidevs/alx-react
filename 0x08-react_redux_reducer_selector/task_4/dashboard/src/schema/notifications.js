@@ -25,9 +25,3 @@ export function getAllNotificationsByUser(userId) {
   }
   return userNotifications;
 }
-
-const notificationSchema = new schema.Entity('notifications');
-
-export function notificationsNormalizer(data) {
-  return normalize(data, [notificationSchema]).entities.notifications || {};
-}
